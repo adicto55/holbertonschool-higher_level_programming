@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module for MyList class that inherits from list"""
+
+
 class MyList(list):
     """Class that inherits from list with a print_sorted method"""
     
