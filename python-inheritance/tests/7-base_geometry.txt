@@ -30,6 +30,36 @@ Traceback (most recent call last):
     ...
 ValueError: distance must be greater than 0
 
+Test integer_validator with tuple (should raise TypeError):
+>>> bg.integer_validator("age", (4,))
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+
+Test integer_validator with list (should raise TypeError):
+>>> bg.integer_validator("age", [3])
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+
+Test integer_validator with boolean (should raise TypeError):
+>>> bg.integer_validator("age", True)
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+
+Test integer_validator with set (should raise TypeError):
+>>> bg.integer_validator("age", {3, 4})
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+
+Test integer_validator with None (should raise TypeError):
+>>> bg.integer_validator("age", None)
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+
 Test area() method (should raise Exception):
 >>> bg.area()
 Traceback (most recent call last):
