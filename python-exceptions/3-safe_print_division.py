@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Module for safe division"""
+"""Module for safe division."""
 
 
 def safe_print_division(a, b):
-    """Divide 2 integers and print the result in finally block"""
+    """Divide 2 integers and print the result in finally block."""
     result = None
     try:
         result = a / b
